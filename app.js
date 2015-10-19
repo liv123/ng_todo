@@ -3,6 +3,10 @@ var app = angular.module('ngToDo', []);
 app.controller('myNotesCtrl', ['$scope', '$http', function($scope, $http) {
 	$scope.notes = [];
 	$scope.newNote  = [];
+	$scope.checkboxModel = {
+		value1 : checkedOff,
+		value2 : false
+	};
 	
 
 
@@ -21,7 +25,7 @@ app.controller('myNotesCtrl', ['$scope', '$http', function($scope, $http) {
 	}
 
 	$scope.markComplete = function(){
-		if (checkedOff = true){}
+		
 	}
 
 }]);
