@@ -1,0 +1,19 @@
+{
+  "name": "ng_todo",
+  "version": "0.0.0",
+  "authors": [
+    "liv123 <olivia.e@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
