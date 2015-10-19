@@ -12,12 +12,21 @@
 	<div class="container">
 		<h1>Note to Self</h1>
 		<h2>where you remember that thing you were supposed to do.</h2>
+		
+		<!--input new note-->
 		New note to self:
 		<input data-ng-class="newNotes" data-ng-model="newNote" type="text" />
 		<button data-ng-click="addNote(newNote)">Add</button>
-		<ul>
-			<li data-ng-repeat = "note in notes">{{note}}</li>
-		</ul>
+
+		<!--list of notes-->
+		<div>
+			<div data-ng-repeat = "note in notes" >
+			<div data-ng-hide="checked">
+				<input type="checkbox" data-ng-model="checked"/>
+				{{note}} 
+			</div>
+			</div>
+		</div>
 
 	</div>
 </body>
