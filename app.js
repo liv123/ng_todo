@@ -6,17 +6,15 @@ app.controller('myNotesCtrl', ['$scope', '$http', function($scope, $http) {
 
 
 
-	$scope.addNotes = function(){
+	$scope.addNote = function(newNote){
+		$scope.notes.push(newNote);
 		
 	}
 
-	$scope.deleteNotes = function(){
+	$scope.deleteNote = function(){
 		
 
 	}
-
-  $scope.editNotes = function(){
-    
-  }
 
 }]);
+

@@ -9,8 +9,16 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body data-ng-controller="myNotesCtrl">
-<h1>Note to Self</h1>
-<h2>where you remember that thing you were supposed to do.</h2>
+	<div class="container">
+		<h1>Note to Self</h1>
+		<h2>where you remember that thing you were supposed to do.</h2>
+		New note to self:
+		<input data-ng-class="newNotes" data-ng-model="newNote" type="text" />
+		<button data-ng-click="addNote(newNote)">Add</button>
+		<ul>
+			<li data-ng-repeat = "note in notes">{{note}}</li>
+		</ul>
 
+	</div>
 </body>
 </html>
